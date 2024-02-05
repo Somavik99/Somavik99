@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Linking Style sheet -->
         <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="./CSS/EvenStyle.css" />
         <!-- Linking the font-awesome CDN -->
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -13,6 +14,44 @@
         <title>Document</title>
     </head>
     <body>
+
+        <div class="Modal" id="Modal__display">
+            <h1 class="Form__heading">LogIn Form</h1>
+            <form class="Login__Form">
+                <div>
+                    <button class="Close__btn">X</button>
+                </div>
+              <div>
+                <label for="userName"
+                  >User Name:<span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  name="User"
+                  id="userName"
+                  placeholder="UserId or Email..."
+                />
+                <p class="Error__msg" id="User__Err">Please Enter UserId or Email</p>
+              </div>
+      
+              <div>
+                <label for="Password"
+                  >Password: <span style="color: red">*</span>
+                </label>
+                <input
+                  type="password"
+                  name="pass"
+                  id="Password"
+                  placeholder="Password..."
+                />
+                <p class="Error__msg" id="Password__Err">Please Enter Password</p>
+              </div>
+              <div>
+                <input type="button" name="btn" id="InputButton" value="Login" />
+              </div>
+            </form>
+          </div>
+      
         <!-- Nav bar Starts here -->
         <nav>
  
@@ -32,7 +71,7 @@
             <section class="Icons__section">
                 <div><i class="fa-solid fa-magnifying-glass"></i></div>
                 <div><i class="fa-solid fa-cart-shopping"></i></div>
-                <div><i class="fa-solid fa-user"></i></div>
+                <div id="User__Login"><i class="fa-solid fa-user"></i></div>
             </section>
 
         </nav>
@@ -386,4 +425,5 @@
             </section>
         </footer>
     </body>
+    <script src="./js/Events.js"></script>
 </html>

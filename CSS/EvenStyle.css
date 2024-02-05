@@ -1,0 +1,86 @@
+/* body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: large;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+.Login__Form {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+  font-weight: 800;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid rgb(118, 86, 86);
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  background: rgb(201, 200, 207);
+  background: linear-gradient(
+    176deg,
+    rgba(201, 200, 207, 1) 0%,
+    rgba(240, 240, 240, 1) 35%,
+    rgba(237, 240, 241, 1) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Login__Form div {
+  margin-bottom: 40px;
+  padding: 8px;
+}
+
+.Form__heading {
+  color: rgb(15, 132, 222);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+  font-weight: 800;
+  text-align: center;
+}
+
+.Login__Form input {
+  width: 250px;
+  height: 24px;
+  margin: 5px;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  border-radius: 3px;
+}
+
+.Login__Form .Close__btn{
+    float: right;
+}
+
+div #InputButton {
+  width: 120px;
+  height: 30px;
+  padding: 2px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 8px;
+  outline: none;
+  background-color: rgb(7, 216, 7);
+  color: white;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.Login__Form .Error__msg {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
