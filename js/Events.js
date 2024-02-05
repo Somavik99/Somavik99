@@ -1,10 +1,18 @@
 const Button = document.getElementById("InputButton");
 const UserLogin = document.getElementById("User__Login");
 const Modal = document.getElementById("Modal__display")
+const CloseBtn = document.getElementById("Close__modal")
 
-UserLogin.onclick=function(){
+
+UserLogin.addEventListener("click",function(){
 Modal.style.display="block"
-}
+})
+
+CloseBtn.addEventListener("click",function(){
+    Modal.style.display="none"
+})
+
+
 
 Button.addEventListener("click", function () {
   const UserInput = document.getElementById("userName").value;
@@ -17,6 +25,10 @@ Button.addEventListener("click", function () {
     : PasswordInput === ""
     ? (PasswordError.style.display = "block")
     : ((UserError.style.display = "none"),
-      (PasswordError.style.display = "none")),
-    alert("Successfully LoggedIn");
+      (PasswordError.style.display = "none"))
+
+if(UserInput!=="" && PasswordInput!==""){
+    alert(`${UserInput} logged in successfully`)
+}
+
 });
